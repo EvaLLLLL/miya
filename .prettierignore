@@ -1,0 +1,10 @@
+**/*.svg
+**/*.ejs
+**/*.html
+.public
+node_modules
+.yarn
+build
+coverage
+.expo
+.expo_shared
