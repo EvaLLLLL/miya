@@ -1,0 +1,12 @@
+{
+  "name": "miya",
+  "displayName": "miya",
+  "expo": {
+    "name": "miya",
+    "slug": "miya",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
