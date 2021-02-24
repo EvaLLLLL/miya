@@ -1,12 +1,13 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { Button } from 'antd-mobile'
+import { Icon } from './src/components/Icon'
+import { faSdCard } from '@fortawesome/free-solid-svg-icons'
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
-      <Button>Click me</Button>
+      <Icon icon={faSdCard} />
     </View>
   )
 }
