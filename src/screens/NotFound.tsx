@@ -1,16 +1,15 @@
 /**
- * @file Splash
+ * @file FIX ME WHEN YOU SEE ME! 请对本文件的用途或内容进行说明...
  */
 
 import React from 'react'
-import { View, Text } from 'antd-mobile'
+import { Text, View } from 'antd-mobile'
 import styled from 'styled-components/native'
-import { RootStackComponent } from '../router/types'
 
-export const SplashScreen: RootStackComponent<'SplashScreen'> = () => {
+export const NotFound = () => {
   return (
     <Wrapper>
-      <Text>Splash Screen</Text>
+      <Text>404 Screen</Text>
     </Wrapper>
   )
 }

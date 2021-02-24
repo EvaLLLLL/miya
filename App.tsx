@@ -3,8 +3,8 @@
  */
 
 import React from 'react'
-import { RootNavigator } from './src/router/RootNavigator'
+import { Navigation } from './src/components/Navigation/Navigation'
 
 export default function App() {
-  return <RootNavigator />
+  return <Navigation colorScheme="dark" />
 }
