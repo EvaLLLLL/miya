@@ -3,19 +3,43 @@
  */
 
 import React from 'react'
-import { Text, View } from 'antd-mobile'
+import { View } from 'react-native'
 import styled from 'styled-components/native'
 
 export const AlbumsScreen = () => {
   return (
     <Wrapper>
-      <Text>Albums Screen</Text>
+      <ImgWrapper>
+        <ImgContainer>img</ImgContainer>
+        <ImgContainer>img</ImgContainer>
+        <ImgContainer>img</ImgContainer>
+        <ImgContainer>img</ImgContainer>
+        <ImgContainer>img</ImgContainer>
+        <ImgContainer>img</ImgContainer>
+        <ImgContainer>img</ImgContainer>
+        <ImgContainer>img</ImgContainer>
+      </ImgWrapper>
     </Wrapper>
   )
 }
 
 const Wrapper = styled(View)`
   flex: 1;
-  align-items: center;
-  justify-content: center;
+`
+
+const ImgWrapper = styled(View)`
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap
+`
+
+const ImgContainer = styled(View)`
+  height: 15vh;
+  width: calc(100% / 3);
+  background-color: pink;
 `

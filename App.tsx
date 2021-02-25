@@ -3,8 +3,8 @@
  */
 
 import React from 'react'
-import { Navigation } from './src/components/Navigation/Navigation'
+import { Navigation } from './src/components/Navigation'
 
 export default function App() {
-  return <Navigation colorScheme="dark" />
+  return <Navigation colorScheme="light" />
 }

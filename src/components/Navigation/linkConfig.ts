@@ -10,16 +10,8 @@ export default {
     screens: {
       Root: {
         screens: {
-          Albums: {
-            screens: {
-              Albums: 'albums',
-            },
-          },
-          Explore: {
-            screens: {
-              Explore: 'explore',
-            },
-          },
+          albums: 'albums',
+          explore: 'explore'
         },
       },
       NotFound: '*',

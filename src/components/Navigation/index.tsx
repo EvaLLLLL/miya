@@ -10,7 +10,7 @@ import {
   NavigationContainer,
 } from '@react-navigation/native'
 import linkConfig from './linkConfig'
-import { RootNavigator } from './navigator'
+import { RootNavigator } from './RootNavigator'
 
 export const Navigation: React.FC<{
   colorScheme: ColorSchemeName

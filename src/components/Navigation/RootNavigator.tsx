@@ -3,14 +3,14 @@
  */
 
 import React from 'react'
-import { Icon } from '../../Icon'
+import { Icon } from '../Icon'
 import { faShip, faSkiing } from '@fortawesome/free-solid-svg-icons'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
-import Colors from '../../../assets/Colors'
-import useColorScheme from '../../../hooks/useColorScheme'
-import { TopTabParamList } from '../types'
-import { AlbumsNavigator } from './AlbumsNavigator'
-import { ExploreNavigator } from './ExploreNavigator'
+import Colors from '../../assets/Colors'
+import useColorScheme from '../../hooks/useColorScheme'
+import { TopTabParamList } from './types'
+import { AlbumsScreen } from '../../screens/Albums'
+import { ExploreScreen } from '../../screens/Explore'
 
 const Tab = createMaterialTopTabNavigator<TopTabParamList>()
 
@@ -24,14 +24,14 @@ export const RootNavigator: React.FC = () => {
     >
       <Tab.Screen
         name="Albums"
-        component={AlbumsNavigator}
+        component={AlbumsScreen}
         options={{
           tabBarIcon: ({ color }) => <Icon icon={faShip} color={color} />,
         }}
       />
       <Tab.Screen
         name="Explore"
-        component={ExploreNavigator}
+        component={ExploreScreen}
         options={{
           tabBarIcon: ({ color }) => <Icon icon={faSkiing} color={color} />,
         }}
